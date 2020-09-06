@@ -49,7 +49,7 @@
 
             <footer>
                 <p class="footer">
-                    &copy;<script>document.write(new Date().getFullYear());</script> Luan Oliveira · Todos os direitos reservados  · <a href="https://github.com/luanholiv/luanholiv.github.io"  class="secondary-anchor">Código fonte</a>
+                    &copy;<span id="year"></span>> Luan Oliveira · Todos os direitos reservados  · <a href="https://github.com/luanholiv/luanholiv.github.io"  class="secondary-anchor">Código fonte</a>
                 </p>
             </footer>
             
@@ -61,6 +61,7 @@
             const year = today.getFullYear();
             const myAge = Math.floor(Math.abs(today - birthday) / 1000 / 60 / 60 / 24 / 365);
             document.getElementById("age").innerHTML = myAge;
+            document.getElementById("year").innerHTML = year;
         </script>
     </body>
     </html>
