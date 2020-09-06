@@ -1,1 +1,66 @@
-Hello World
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Luan Oliveira">
+        
+        <title>Luan Oliveira</title>
+        
+        <link rel="icon" type="image/jpg" href="./images/icon.jpg">
+
+        <link rel="stylesheet" type="text/css" href="./css/index.css">
+    </head>
+    <body>
+        <div class="container">
+            <main class="content">            
+                <h1>
+                    <span>Luan Oliveira</span>
+                    <span class="logo_cursor"></span>
+                </h1>
+    
+                <img src="images/me.jpg" title="Luan Oliveira" alt="Foto do Luan em preto e branco." class="profile_picture">
+                
+                <div class="description">
+                    <p>Meu nome é <strong>Luan Henrique de Oliveira</strong>, tenho <span id="age"></span> anos e sou desenvolvedor web. </p> 
+                    <p>Atualmente trabalho na Ivory IT, construindo soluções para diversas empresas. Sou apaixonado pelo mundo do desenvolvimento mobile, que vem democratizando o acesso a todo tipo de informação para a maior quantidade de pessoas.</p>
+                    <p>Além do trabalho, eu tenho interesse em futebol, fotografia, história, música, yoga e, principalmente, estar com as pessoas que eu gosto. Bom, acho que é isso. </p>    
+                </div>
+                
+                <h2>Fale comigo por aqui</h2>
+                <ul>
+                    <li>
+                        <a href="mailto:luanholiv@gmail.com" target="_blanc" rel="noopener" class="primary-anchor">Email</a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/luanholiv" target="_blanc"  rel="noopener"  class="primary-anchor">GitHub</a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/luanh01" target="_blanc"  rel="noopener"  class="primary-anchor">Twitter</a>
+                    </li>
+                    <li>
+                        <a href="https://instagram.com/luanh01" target="_blanc"  rel="noopener"  class="primary-anchor">Instagram</a>
+                    </li>
+                    <li>
+                        <a href="https://open.spotify.com/user/luanh01" target="_blanc"  rel="noopener" class="primary-anchor">Spotify</a>
+                    </li>
+                </ul>
+            </main>
+
+            <footer>
+                <p class="footer">
+                    &copy;<script>document.write(new Date().getFullYear());</script> Luan Oliveira · Todos os direitos reservados  · <a href="https://github.com/luanholiv/luanholiv.github.io"  class="secondary-anchor">Código fonte</a>
+                </p>
+            </footer>
+            
+        </div>
+
+        <script>
+            const today = new Date();
+            const birthday = new Date("1995/03/16");
+            const year = today.getFullYear();
+            const myAge = Math.floor(Math.abs(today - birthday) / 1000 / 60 / 60 / 24 / 365);
+            document.getElementById("age").innerHTML = myAge;
+        </script>
+    </body>
+    </html>
